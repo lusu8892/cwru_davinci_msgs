@@ -1,1 +1,1 @@
-Customized sessages from CWRU daVinci
+Customized messages for CWRU daVinci
