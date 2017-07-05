@@ -1,0 +1,23 @@
+#goal definition
+#the lines with the hash signs are merely comments
+#goal, result and feedback are defined by this fixed order, and separated by 3 hyphens
+
+#goal messages:
+geometry_msgs/PointStamped entry_point                                                    # needle entry point position
+geometry_msgs/PointStamped exit_point                                                     # needle exit point position
+geometry_msgs/TransformStamped grasp_transform                                            # grasp transform btw gripper and needle
+#float64 depth_of_suture                                                                   # suture depth
+#float64 needle_radius                                                                     # needle radius
+#int32 arm_indication                                                                      # arm index
+int32 which_action_client                                                                 # which action client to be use
+---
+#result definition
+geometry_msgs/PointStamped selected_exit_point                                            # a valid exit point position
+trajectory_msgs/JointTrajectory valid_trajectory                                          # a valid joint trajectory
+geometry_msgs/TransformStamped valid_grasp_transform                                      # a valid grasp transform
+int32 traj_id                                                                             #
+---                                                                                       #
+#feedback: optional; could declare step number of trajectory in progress,                 #
+#currently there is no use for feedback                                                   #
+int32 fdbk                                                                                #
+                                                                                          #
